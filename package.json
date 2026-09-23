@@ -1,0 +1,22 @@
+{
+  "name": "agents-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small hub for scheduled/manual automation agents (data pipelines, and later LLM-powered ones).",
+  "scripts": {
+    "start": "tsx src/runAgent.ts",
+    "dev": "tsx watch src/runAgent.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "google-auth-library": "^9.14.1",
+    "googleapis": "^140.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
