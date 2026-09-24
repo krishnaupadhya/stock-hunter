@@ -1,8 +1,8 @@
 import type { TradingViewScanResponse } from './fetch.js';
 
 const HEADERS = [
-  'Symbol',
-  'Type',
+  'TICKER',
+  'TYPE',
   'Price',
   'Sector Code',
   'Analyst Rating Label',
