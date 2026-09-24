@@ -82,9 +82,9 @@ key's `\n` characters made it into `.env` intact (quote the whole value, as in
    - `SHEET_NAME`
 3. Go to the **Actions** tab → you'll see "Agent - TradingView PE Scanner" →
    click **Run workflow** to trigger it manually right now.
-4. It will also run automatically on the cron schedule in the workflow file
-   (`30 3 * * 1-5` = 9:00 AM IST, Mon–Fri). Edit that line to change timing —
-   cron time is always **UTC**, so convert your local time first
+4. It will also run automatically every hour at 7 minutes past the hour on the
+   cron schedule in the workflow file (`7 * * * *`). Cron time is always
+   **UTC**, so convert your local time first
    (e.g. https://crontab.guru helps write the expression).
 
 That's it — manual trigger and scheduled trigger, zero hosting, zero cost.

@@ -4,9 +4,9 @@ on:
   # Manual trigger: shows up as a "Run workflow" button in the Actions tab.
   workflow_dispatch: {}
 
-  # Automated trigger: every 15 minutes. Cron is always in UTC.
+  # Automated trigger: hourly at minute 7. Cron is always in UTC.
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7 * * * *'
 
 jobs:
   run-agent:
